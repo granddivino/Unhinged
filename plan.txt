@@ -55,7 +55,7 @@ Karen Characteristics:
  a card with a phone number on it at Kathy. Karen then gets Meg and leaves the scene of the accident.
 
  Question: Where is Karen going now?
- Choice C: Forget book club, Karen wants to go home and drink box wine by herself.
+ Choice C: Screw the book club, Karen wants to go home and drink box wine by herself.
  Choice D: Go to the supermarket.
 
  Scenario 3:
@@ -72,7 +72,7 @@ Karen Characteristics:
  Karen goes home and pops open a box of Franzia. It really makes no difference since she already finished an entire box 
  earlier in the day. Karen sees some children playing in the street in the cul-de-sac.
 
- Question: Although the children are playing like normal children would, what does Karen do?
+ Question: Those kids look like little troublemakers, what does Karen do?
  Choice G: Go out there and give the kids a piece of your mind.
  Choice H: Call the cops on the children.
 
@@ -91,7 +91,7 @@ Karen Characteristics:
  her favorite flavor, Strawberry Daquiri, is all out. Feeling her face starting to get hot because she's 
  had SUCH a rough day...
 
- Question: Karen decides to..
+ Question: Karen decides to...
  Choice K: Complain and try to get free ice cream.
  Choice L: Ask to speak to the manager about how inept they are at keeping one flavor in stock.
 
@@ -100,7 +100,7 @@ Karen Characteristics:
  After dropping Meg off at home, it is now 5:40pm and Karen is late for book club at Kim's. She walks in
  and finds the girls have started wine 'o clock without her.
 
- Question: The girls couldn't wait, they're already busy complaining about their husbands instead of books. So Karen
+ Question: The girls couldn't wait, they're already busy complaining about their husbands instead of talking about books. So Karen
  decides to...
  Choice M: Interrupt Susan's story and talk about how that bitch Kathy crashed into her.
  Choice N: Raise hell about how they got started without her.
