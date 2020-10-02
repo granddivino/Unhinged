@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    border: 4px solid black;
+    font-size: 100px;
+    background:purple;
+    justify-content: center;
+}
+
+.choices {
+    display: flex; 
+}
+
+#choice1 {
+    align-content: center;
+    width: 200px;
+    height: 400px;
+    background: white;
+    border: 4px solid black;
+    flex: 1;
+
+}
+#choice2 {
+    align-content: center;
+    width: 200px;
+    height: 400px;
+    background: white;
+    border: 4px solid black;
+    flex: 1;
+
+}
+/* .button1 {
+
+} */
+
+#choice1:hover {
+    color: white;
+    background: red;
+}
+#choice2:hover {
+    color: white;
+    background: red;
+}
