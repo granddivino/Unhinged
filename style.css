@@ -30,7 +30,7 @@ h1 {
 
 #choice1 {
     font-family: 'Special Elite', cursive;
-    font-size: 40px;
+    font-size: 30px;
     color:red;
     width: 200px;
     height: 400px;
@@ -45,7 +45,7 @@ h1 {
 }
 #choice2 {
     font-family: 'Special Elite', cursive;
-    font-size: 40px;
+    font-size: 30px;
     color: red;
     width: 200px;
     height: 400px;
@@ -60,14 +60,14 @@ h1 {
 }
 
 .choices {
-    background: white;
+    display: flex;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .container:hover {
     color: black;
-    background: rgb(111, 211, 214);
+    background: pink;
     cursor: pointer;
 }
 

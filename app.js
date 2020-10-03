@@ -1,7 +1,7 @@
 const question = document.getElementById('question');
 const choiceElement = document.getElementById('choice1');
 const choiceElement2 = document.getElementById('choice2');
-const choices = document.getElementsByClassName('choices')
+const choices = document.getElementsByTagName('div')
 
 var scenario = 0;  //Scenario tracker
 
@@ -9,19 +9,19 @@ var bitchPoints = 0; //Point system
 
 //Event listeners for choices made
 choiceElement.addEventListener('click', displayChoices);
-choiceElement2.addEventListener('click', displayChoices);
+choiceElement2.addEventListener('click', displayChoices2);
 question.addEventListener('click', displayQuestion);
 
 //Function for starting the game and state the game starts in after restart function
 function startGame() {
-    question.textContent =  "Our adventure begins with Karen sitting in a parking lot in her champagne gold minivan waiting for her daughter Meg to get out of " +
-    "soccer practice. While waiting in the parking lot, Karen is on the phone yelling at her husband Daniel, telling him " +
+    question.textContent =  "Karen sits in a parking lot in her champagne gold minivan waiting for her daughter Meg to get out of " +
+    "soccer practice. While waiting in the parking lot, Karen is on the phone yelling at her husband, telling him " +
     "how useless he is because he should have left work early to pick her up. Karen has no job mind you, but " +
     "she thinks that he should be the one to do it because she has a migraine and so she's not late to her " +
     "book club at Kim's house at 5:00. (Click here to begin)";
-    choiceElement.textContent = "Objective: There's not really one, just be the best Karen you can be and see where it takes you! " +
+    choiceElement.textContent = "Objective: There's not really one, just be the best Karen you can be and see where it takes you!" +
     "Don't think too much about it being realistic like I did (in the real world, most of the choices presented won't fly)" +
-    "Be the best Karen you can be by earning points. Point ranges will result in different endings";
+    "Be the best Karen you can be by earning points. Points will result in different endings.";
     choiceElement.style.backgroundImage = null
     choiceElement2.style.backgroundImage = null
     bitchPoints = 0;
@@ -66,7 +66,7 @@ function displayChoices() {
             case 2:     choiceElement.style.backgroundImage = null
                         choiceElement2.style.backgroundImage = null
                         question.textContent = "Karen goes home and pops open a box of Franzia. It really makes no difference since she already finished an entire box " +
-                        "earlier in the day. Karen sees some children playing in the street in the cul-de-sac.";
+                        "earlier in the day. Karen sees some children playing in the street in the cul-de-sac. Those kids look like little troublemakers, what does Karen do?";
                         //During scenario 2 clicking the left button loads options G and H
                         choiceElement.textContent = "Go out there and give the kids a piece of your mind.";  //Option G
                         choiceElement2.textContent = "Call the cops on the children.";  //Option H
@@ -79,7 +79,7 @@ function displayChoices() {
                         choiceElement2.style.backgroundImage = null
                         question.textContent = "Karen makes a stop at Coldstone to get some ice cream to shut Meg up. While ordering, Karen realizes that " +
                         "her favorite flavor, Strawberry Daquiri, is out of order. Feeling her face starting to get hot because she's " +
-                        "had SUCH a rough day...";
+                        "had SUCH a rough day. Karen decides to...";
                         //During scenario 3 clicking the left button loads options K and L
                         choiceElement.textContent = "Complain and try to get free ice cream.";  //Option K
                         choiceElement2.textContent = "Ask to speak to the manager about how inept they are at keeping one flavor in stock.";  //Option L
@@ -97,6 +97,8 @@ function displayChoices() {
                         choices.style.backgroundImage = "url(https://static.ffx.io/images/$zoom_0.157%2C$multiply_0.4431%2C$ratio_1.5%2C$width_756%2C$x_129%2C$y_67/t_crop_custom/q_86%2Cf_auto/bfbaeae2cb505070236b00578e00794e06f7afbc)"
                         scenario = 8;
                         bitchPoints += 2;
+                        document.getElementsById("choice1").disabled = true;
+                        document.getElementsById("choice2").disabled = true;
                         break;
             case 5:     choiceElement.style.backgroundImage = null
                         choiceElement2.style.backgroundImage = null
@@ -107,6 +109,8 @@ function displayChoices() {
                         "A random woman steps in and punches Karen in the face.";
                         choiceElement.textContent = "";
                         choiceElement2.textContent = "";
+                        document.getElementsById("choice1").disabled = true;
+                        document.getElementsById("choice2").disabled = true;
                         choices.style.backgroundImage = "url(https://www.errenskitchen.com/wp-content/uploads/2018/04/butter.jpg)"
                         scenario = 10;
                         bitchPoints += 10;
@@ -119,6 +123,8 @@ function displayChoices() {
                         "and slams Karen's face into the counter and knocks her out.";
                         choiceElement.textContent = "";
                         choiceElement2.textContent = "";
+                        document.getElementsById("choice1").disabled = true;
+                        document.getElementsById("choice2").disabled = true;
                         choices.style.backgroundImage = "url(https://nypost.com/wp-content/uploads/sites/2/2019/10/woman-attacks-line-cutter-wp-thumb.jpg?quality=80&strip=all)"
                         scenario = 12; 
                         bitchPoints += 3;
@@ -130,34 +136,45 @@ function displayChoices() {
                         "Susan then punches Karen for interrupting her (and she's wanted to do that for a long time).";
                         choiceElement.textContent = "";
                         choiceElement2.textContent = "";
-                        choices.style.backgroundImage = "url()"
+                        document.getElementsById("choice1").disabled = true;
+                        document.getElementsById("choice2").disabled = true;
+                        choices.style.backgroundImage = "url(https://www.bravotv.com/sites/bravo/files/styles/amp_metadata_content_image_min_696px_wide/public/legacy/images/promote/2014/04/dish-040314-tbt-an-epic-fight.jpg?itok=oSJUm-pi)"
                         scenario = 14;
                         bitchPoints += 4;
                         break;
         }
+        win();
+
         //"Win" Scenario
-        if(bitchPoints <= 10 && scenario > 7) {
-            question.style.textContent = "Karen gets arrested for fleeing the scene of the accident at the school and causing public disturbance." +
-            "You think like a Karen, but a real Karen wouldn't have ended up in jail."
-            choices.style.backgroundImage = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQJXuQ7Pe2ol3sjdr8GSw-aXTp3MEn7VA-F4A&usqp=CAU)"
-        }
-        else if(bitchPoints > 10 && bitchPoints <= 20 && scenario > 7) {
-            question.style.textContent = "You make a great Karen, but there are other choices a real Karen would approve of."
-            choices.style.backgroundImage = "url(https://nypost.com/wp-content/uploads/sites/2/2020/05/karen-hall-of-fame-01.jpg?quality=80&strip=all)"
-        }
-        else if(bitchPoints > 20 && bitchPoints <= 20 && scenario > 7) {
-            question.style.textContent = "Congratulations! You think like a modern day Karen... And should get punched in the face."
-            choices.style.backgroundImage = "url(https://fox5sandiego.com/wp-content/uploads/sites/15/2020/09/karen-halloween-mask.jpg?w=1280)"
+        // if (bitchPoints <= 10 && scenario > 7) {
+        //     choiceElement.style.backgroundImage = null
+        //     choiceElement2.style.backgroundImage = null
+        //     question.style.textContent = "Karen gets arrested for fleeing the scene of the accident at the school and causing public disturbance." +
+        //     "You think like a Karen, but a real Karen wouldn't have ended up in jail."
+        //     choices.style.backgroundImage = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQJXuQ7Pe2ol3sjdr8GSw-aXTp3MEn7VA-F4A&usqp=CAU)"
+        // }
+        // else if (bitchPoints > 10 && bitchPoints <= 20 && scenario > 7) {
+        //     choiceElement.style.backgroundImage = null
+        //     choiceElement2.style.backgroundImage = null
+        //     question.style.textContent = "You make a great Karen, but there are other choices a real Karen would approve of."
+        //     choices.style.backgroundImage = "url(https://nypost.com/wp-content/uploads/sites/2/2020/05/karen-hall-of-fame-01.jpg?quality=80&strip=all)"
+        // }
+        // else if (bitchPoints > 20 && bitchPoints <= 20 && scenario > 7) {
+        //     choiceElement.style.backgroundImage = null
+        //     choiceElement2.style.backgroundImage = null
+        //     question.style.textContent = "Congratulations! You think like a modern day Karen... And should get punched in the face."
+        //     choices.style.backgroundImage = "url(https://fox5sandiego.com/wp-content/uploads/sites/15/2020/09/karen-halloween-mask.jpg?w=1280)"
         }
     }
-}
+
 //All the right side choices
-    if(this == choiceElement2){
+function displayChoices2()  {
+if(this == choiceElement2){
         switch(scenario){
             case 1:     choiceElement.style.backgroundImage = null
                         choiceElement2.style.backgroundImage = null
                         question.textContent = "Without saying sorry, or having remorse of any kind (or exchanging insurance info), Karen shoves Meg " +
-                        "into her car and takes off. On the way home, Meg says she wants to stop and get ice cream.";
+                        "into her car and takes off. On the way home, Meg says she wants to stop and get ice cream. Karen is late for her book club. What should she do?";
                         //clicking the right button during scenario 1 loads Options E and F
                         choiceElement.textContent = "Get your daughter ice cream so she stops whining.";  //Option E
                         choiceElement2.textContent = "Go to book club!";  //Option F
@@ -169,7 +186,7 @@ function displayChoices() {
             case 2:     choiceElement.style.backgroundImage = null
                         choiceElement2.style.backgroundImage = null
                         question.textContent = "Karen goes to the supermarket and is there to pick up a few things to throw together for dinner. While shopping, " +
-                        "Karen realizes that the exact brand of butter she uses is not in stock. Obviously, life is hard.";
+                        "Karen realizes that the exact brand of butter she uses is not in stock. Obviously, life is hard. What does Karen do?";
                         //clicking right during scenario 2 loads options I and J
                         choiceElement.textContent = "Karen asks to speak to the manager."; //Option I
                         choiceElement2.textContent = "Karen finds the nearest store employee and takes action!";  //Option J
@@ -181,7 +198,8 @@ function displayChoices() {
             case 3:     choiceElement.style.backgroundImage = null
                         choiceElement2.style.backgroundImage = null
                         question.textContent = "After dropping Meg off at home, it is now 5:40pm and Karen is late for book club at Kim's. She walks in " +
-                        "and finds the girls have started wine 'o clock without her.";
+                        "and finds the girls have started wine 'o clock without her. The girls couldn't wait, they're already busy complaining about their husbands instead of talking about books. So Karen" +
+                        "decides to...";
                         //clicking right during scenario 3 loads options M and N
                         choiceElement.textContent = "Interrupt Susan's story and talk about how that bitch Kathy crashed into her.";  //Option M
                         choiceElement2.textContent = "Make a big deal about how they got started without her.";  //Option N
@@ -198,6 +216,8 @@ function displayChoices() {
                         "Karen opens the door and gets a punch to the face by Kathy, who had unfinished business.";
                         choiceElement.textContent = "";
                         choiceElement2.textContent = "";
+                        document.getElementsById("choice1").disabled = true;
+                        document.getElementsById("choice2").disabled = true;
                         choices.style.backgroundImage = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSlP0FuEIuJmUtRJ33RU3Pj3m2VEC4O0CpclQ&usqp=CAU)"
                         scenario = 9;
                         bitchPoints += 5;
@@ -212,6 +232,8 @@ function displayChoices() {
                         "causing all the shelves to fall on top of Karen.";
                         choiceElement.textContent = "";
                         choiceElement2.textContent = "";
+                        document.getElementsById("choice1").disabled = true;
+                        document.getElementsById("choice2").disabled = true;
                         choices.style.backgroundImage = "url(https://miro.medium.com/max/720/1*qdyANfSIrcYqD-jh4MILlA.jpeg)"
                         scenario = 11;
                         bitchPoints += 4;
@@ -224,9 +246,12 @@ function displayChoices() {
                         "in line to do the same. Karen turns around and gets a swift punch to the face from the woman behind her. ";
                         choiceElement.textContent = "";
                         choiceElement2.textContent = "";
+                        document.getElementsById("choice1").disabled = true;
+                        document.getElementsById("choice2").disabled = true;
                         choices.style.backgroundImage = "url(https://nextshark.com/wp-content/uploads/2018/08/crap-1280x720.jpg)"
                         scenario = 13;
                         bitchPoints += 5;
+
                         break;
             case 7:     choiceElement.style.backgroundImage = null
                         choiceElement2.style.backgroundImage = null
@@ -236,27 +261,32 @@ function displayChoices() {
                         "gets up and punches Karen in the face.";
                         choiceElement.textContent = "";
                         choiceElement2.textContent = "";
+                        document.getElementsById("choice1").disabled = true;
+                        document.getElementsById("choice2").disabled = true;
                         choices.style.backgroundImage = "url(https://lh3.googleusercontent.com/proxy/by8SiHKPRyDQQqiaQkkvnP_Gvp4QjmUnkdbsfFHW9OoVe3asjXF7aAVsupDN5W6shSHutLZWGy142m5NhCrNZNUBXX2eBSaXR9KZe4qBgRDVXLKl_wqds-bv-lm_aF2D0Yjm)"
                         scenario = 15;
                         bitchPoints += 2;
                         break;
-        }
-        //"Win" Scenario
-        if(bitchPoints <= 10 && scenario > 7) {
-            question.style.textContent = "Karen gets arrested for fleeing the scene of the accident at the school and causing public disturbance." +
-            "You think like a Karen, but a real Karen wouldn't have ended up in jail."
-            choices.style.backgroundImage = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQJXuQ7Pe2ol3sjdr8GSw-aXTp3MEn7VA-F4A&usqp=CAU)"
-        }
-        else if(bitchPoints > 10 && bitchPoints <= 20 && scenario > 7) {
-            question.style.textContent = "You make a great Karen, but there are other choices a real Karen would approve of."
-            choices.style.backgroundImage = "url(https://nypost.com/wp-content/uploads/sites/2/2020/05/karen-hall-of-fame-01.jpg?quality=80&strip=all)"
-        }
-        else if(bitchPoints > 20 && bitchPoints <= 20 && scenario > 7) {
-            question.style.textContent = "Congratulations! You think like a modern day Karen... And should get punched in the face."
-            choices.style.backgroundImage = "url(https://fox5sandiego.com/wp-content/uploads/sites/15/2020/09/karen-halloween-mask.jpg?w=1280)"
-        }
-}
+                        }
+                        win();
+                    }
+                }
 
+//"Win" Scenario
+const win = () => {
+    if (bitchPoints <= 10 && scenario > 7) {
+        question.style.textContent = "Karen gets arrested for fleeing the scene of the accident at the school and causing public disturbance." +
+        "You think like a Karen, but a real Karen wouldn't have ended up in jail."
+        choices.style.backgroundImage = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQJXuQ7Pe2ol3sjdr8GSw-aXTp3MEn7VA-F4A&usqp=CAU)"
+    }
+    else if (bitchPoints > 10 && bitchPoints <= 20 && scenario > 7) {
+        question.style.textContent = "You make a great Karen, but there are other choices a real Karen would approve of."
+        choices.style.backgroundImage = "url(https://nypost.com/wp-content/uploads/sites/2/2020/05/karen-hall-of-fame-01.jpg?quality=80&strip=all)"
+    }
+    else if (bitchPoints > 20 && bitchPoints <= 20 && scenario > 7) {
+        question.style.textContent = "Congratulations! You think like a modern day Karen... And should get punched in the face."
+        choices.style.backgroundImage = "url(https://fox5sandiego.com/wp-content/uploads/sites/15/2020/09/karen-halloween-mask.jpg?w=1280)"
+    }}
 
 
 startGame()

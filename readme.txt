@@ -7,7 +7,7 @@ Be the best Karen you can be by earning points. Point ranges will result in diff
 Karen Characteristics: 
  -Drives a champagne gold minivan or SUV
  -Wears a bob but also known to wear a pixie cut
- -Probably divoriced, sas 3 children, but most likely has custody
+ -Probably divorced, has 3 children, but most likely has custody
  -Always on the phone and doesn't care if everyone can hear her  
  -Quick to call the police for something minor
  -Feels the world owes her everything
@@ -56,14 +56,14 @@ Karen Characteristics:
 
  Question: Where is Karen going now?
  Choice C: Screw the book club, Karen wants to go home and drink box wine by herself. +3 points
- Choice D: Go to the supermarket. +1 points
+ Choice D: Go to the supermarket. +1 point
 
  Scenario 3:
  (Result of choice B)
  Without saying sorry, or having remorse of any kind (or exchanging insurance info), Karen shoves Meg 
  into her car and takes off. On the way home, Meg says she wants to stop and get ice cream.
 
- Question: Karen is already late for her book club. What should she do?
+ Question: Karen is late for her book club. What should she do?
  Choice E: Get your daughter ice cream so she stops whining. +1 point
  Choice F: Go to book club! +3 points
 
@@ -89,7 +89,7 @@ Karen Characteristics:
  (Result of Choice E)
  Karen makes a stop at Coldstone to get some ice cream to shut Meg up. While ordering, Karen realizes that
  her favorite flavor, Strawberry Daquiri, is all out. Feeling her face starting to get hot because she's 
- had SUCH a rough day...
+ had SUCH a rough day.
 
  Question: Karen decides to...
  Choice K: Complain and try to get free ice cream. +3 points
@@ -105,8 +105,9 @@ Karen Characteristics:
  Choice M: Interrupt Susan's story and talk about how that bitch Kathy crashed into her. +4 points
  Choice N: Raise hell about how they got started without her. +2 points
 
- Max points = 12
- Minimum points = 6
+ Max points = ~30
+ Minimum points ~10 or less
+ to create "win" logic
 
  Scenario 8:
  (Result of Choice G)
