@@ -253,7 +253,7 @@ if(this == choiceElement2){
                 }
 
 //"Win" Scenario
-const win = () => {
+function win () {
     for (bitchPoints = 0; bitchPoints <= 30; bitchPoints++) {
     if (bitchPoints <= 10 && scenario > 7) {
         question.style.textContent = "Karen gets arrested for fleeing the scene of the accident at the school and causing public disturbance." +

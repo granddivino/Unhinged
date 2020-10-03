@@ -33,20 +33,21 @@ was thinking about my approach to the design I tried to stay true to that in som
 book. The idea was to have the same setup. 
 
 Wireframe:
+(Not really sure what to put here since I didnt draw one out beforehand)
 
 Heading at the top
 Div below the heading for the questions and scenarios
 Two even divs at the bottom for the choices
 
 Color Pallet:
-
- red 
+(Just used basic ones, none of the RGB)
+ green
  yellow
  black
  pink
 
 User stories:
-As an user I expect to see a button bla bla bla bla
+As a user I definitely appreciate good content and user friendly games. If it seems pretty straightforward, it's good to me.
 
 Development Plan:
 
@@ -77,6 +78,7 @@ Stretch goals Three: Start the coding and get as far as I can and revise, edit, 
 Stretch goals Four: Complete working game
 
 Challenges:
+
 HTML and CSS were no problem, but it definitely refreshed my memory on it and definitely solidified my
 proficiency. Even learned a few new things from googling things I wanted to implement. The biggest challenge 
 was ALL of the javascript. This has been a huge fear of mine since starting learning it in class, working on my
@@ -85,184 +87,3 @@ feel more accomplished in my understanding. 95% of my time spent on this was dev
 to CSS.
 
 App Demo: https://granddivino.github.io/project1/
-
-===============================================================================================
-(I already had this before readme was required to map my plan)
-
-Title: Unhinged: A Day in the Life of a Karen
-
-Objective: There's not really one, just be the best Karen you can be and see where it takes you!
-Don't think too much about it being realistic like I did (in the real world, most of the choices presented won't fly)
-Be the best Karen you can be by earning points. Point ranges will result in different endings
-
-Karen Characteristics: 
- -Drives a champagne gold minivan or SUV
- -Wears a bob but also known to wear a pixie cut
- -Probably divorced, has 3 children, but most likely has custody
- -Always on the phone and doesn't care if everyone can hear her  
- -Quick to call the police for something minor
- -Feels the world owes her everything
- -Complete bitch
- -Mentally unstable
- -Middle adged and aggressively entitled
- -In retail stores and restaurants, she is demanding and rude.
- -If things are not done to her liking, she will ask to speak to a manager
- -Takes everything the wrong way and raises hell about it
- -Anti-Vax and relies on essential oils for the health of her children
-
- Scenario Ideas: 
- -Yell at an essential worker
- -Wine -o clock
- -Call the cops on the kids in the culdesac that's not even my culdesac
- -All lives matter
- -My kid wouldn't say that/Not my kid
- -Make a Denny's waitress cry
- -Threaten to sue
-
- Scenarios:
-
- Opening:
- Our adventure begins with Karen sitting in a parking lot in her champagne gold minivan waiting for her daughter Meg to get out of 
- soccer practice. While waiting in the parking lot, Karen is on the phone yelling at her husband Daniel, telling him
- how useless he is because he should have left work early to pick her up. Karen has no job mind you, but 
- she thinks that he should be the one to do it because she has a migraine and so she's not late to her 
- book club at Kim's house at 5:00.
-
- Scenario 1:
- Clearly distraught from complaining about her husband and how hard her life is, Karen
- puts a little bit too much gas on her pedal as she thinks she's about to speed off... and rams into Kathy's car.
- Kathy then gets out of her car.
-  
- Question: What should Karen do?
- Choice A: Get out of the car and threaten to sue Kathy. +4 points
- Choice B: Hand Kathy a $20 and tell her that should be enough to cover that "ding" +2 points
-
- Scenario 2:
- (Result of choice A)
- Karen gets out of the car and goes off on Kathy for coming out of nowhere and says that Meg has celiac disease
- (which has nothing to do with the car accident), and that she could've been hurt badly. Karen goes on to threaten
- her for child endangerment. Kathy then points out that Karen is at fault, and that 
- Karen's daughter isn't even in the car. Karen don't have time for this and tosses
- a card with a phone number on it at Kathy. Karen then gets Meg and leaves the scene of the accident.
-
- Question: Where is Karen going now?
- Choice C: Screw the book club, Karen wants to go home and drink box wine by herself. +3 points
- Choice D: Go to the supermarket. +1 point
-
- Scenario 3:
- (Result of choice B)
- Without saying sorry, or having remorse of any kind (or exchanging insurance info), Karen shoves Meg 
- into her car and takes off. On the way home, Meg says she wants to stop and get ice cream.
-
- Question: Karen is late for her book club. What should she do?
- Choice E: Get your daughter ice cream so she stops whining. +1 point
- Choice F: Go to book club! +3 points
-
- Scenario 4:
- (Result of choice C)
- Karen goes home and pops open a box of Franzia. It really makes no difference since she already finished an entire box 
- earlier in the day. Karen sees some children playing in the street in the cul-de-sac.
-
- Question: Those kids look like little troublemakers, what does Karen do?
- Choice G: Go out there and give the kids a piece of your mind. +2 points
- Choice H: Call the cops on the children. +5 points
-
- Scenario 5:
- (Result of choice D)
- Karen goes to the supermarket and is there to pick up a few things to throw together for dinner. While shopping,
- Karen realizes that the exact brand of butter she uses is not in stock. Obviously, life is hard.
-
- Question: What does Karen do?
- Choice I: Karen asks to speak to the manager. +10 points
- Choice J: Karen finds the nearest store employee and takes action! +4 points
-
- Scenario 6:
- (Result of Choice E)
- Karen makes a stop at Coldstone to get some ice cream to shut Meg up. While ordering, Karen realizes that
- her favorite flavor, Strawberry Daquiri, is all out. Feeling her face starting to get hot because she's 
- had SUCH a rough day.
-
- Question: Karen decides to...
- Choice K: Complain and try to get free ice cream. +3 points
- Choice L: Ask to speak to the manager about how inept they are at keeping one flavor in stock. +5 points
-
- Scenario 7:
- (Result of Choice F)
- After dropping Meg off at home, it is now 5:40pm and Karen is late for book club at Kim's. She walks in
- and finds the girls have started wine 'o clock without her.
-
- Question: The girls couldn't wait, they're already busy complaining about their husbands instead of talking about books. So Karen
- decides to...
- Choice M: Interrupt Susan's story and talk about how that bitch Kathy crashed into her. +4 points
- Choice N: Raise hell about how they got started without her. +2 points
-
- Max points = ~30
- Minimum points ~10 or less
- to create "win" logic
-
- Scenario 8:
- (Result of Choice G)
- Karen goes out and yells at the children for playing too close to her driveway, and threatens to call the cops on them anyway.
- One of the neighboring parents decides to intervene and decides she's had enough of Karen and punches her in the face.
-
- Scenario 9 (END):
- (Result of Choice H)
- Karen calls the cops and tells them the kids outside look like they're too poor to be residents of the neighborhood.
- She fears for her safety, and believes that those kids are dealing drugs and planning a break in to her home. She also
- believes that all the children are probably vaccinated and that's why they turned out to be bad seeds. The doorbell rings.
- Karen opens the door and gets a punch to the face by Kathy, who had unfinished business.
-
- Scenario 10 (END):
- (Result of Choice I)
- Karen asks to speak to the manager about not having the exact brand of butter she wants, even though there's dozens
- of other kinds to choose from. The manager calmly asks her if there's any other brand that would work for her or if there'so
- anything that can be done to satisfy her, but no, when Karen doesn't get her way, there's no end in sight. Karen yells
- at the manager exclaiming that she's been a customer there for years, and that this is just the result of pure laziness.
- A random woman steps in and punches Karen in the face.
-
- Scenario 11 (END):
- (Result of Choice J)
- Karen spots one of the nearest courtesy clerks and immediately begins to yell at her without a face mask on. 
- She says that she needs this butter to serve a proper dinner and that no other kind will do. She asks the girl "what kind
- of essential worker are you?" It has to be the easiest job in the world to keep butter on the shelf, but obviously no one
- here can do that. The clerk begins to cry as she pleads that it isn't even her job to stock the butter. Overhearing
- the tirade, one of the clerk's coworkers comes up and angrily shoves Karen from behind into the canned vegetables 
- causing all the shelves to fall on top of Karen.
-
- Scenario 12 (END):
- (Result of Choice K)
- Karen cuts to the front of the line, and while paying for Meg's ice cream, shegoes on to say that it's not that hard to 
- serve ice cream, and asks why she has to do everything, and how she has places to be, and that she might as well be 
- behind that counter, and that she should get the ice cream for free. A young girl comes from the middle of the line 
- and slams Karen's face into the counter and knocks her out.
-
- Scenario 13 (END):
- (Result of Choice L)
- Karen asks to speak to the manager and goes on about how hard it could possibly be to keep strawberry daquiri in stock,
- it's just one among many. The manager explains that that flavor is in high demand and that they will get a new stock
- again tomorrow. Karen goes on about how she's gonna leave this Coldstone a horrible review and urges everyone else that'sac
- in line to do the same. Karen turns around and gets a swift punch to the face from the woman behind her. 
-
- Scenario 15 (END):
- (Result of Choice M)
- Karen interrupts Susan after barging in and being 40 minutes late and starts talking about how Daniel is useless, and that 
- Kathy crashed into her, and that she almost died. Karen goes on about how hard her life is and how she has to do everything.
- Susan then punches Karen for interrupting her (and she's wanted to do that for a long time).
-
- Scenario 16 (END):
- (Result of Choice N)
- Karen barges into Kim's house ready to ask why they started without her. But wait, there aren't any essential oils in sight. 
- Instead, she insists that there should be oils present the use will prevent the spread of covid-19, even though in the 
- past she has clearly stated that she believes that it's a hoax. Everyone stops and stares at her for a moment. Kim then 
- gets up and punches Karen in the face.
- 
- Ending 1: You are a mentally unstable middle aged woman who is aggressively entitled. You are demanding and rude, 
- especially to workers in the retail or food industry. You threaten to sue or call the cops at every chance you get, 
- especially at the most minor of inconvenciences.
- 
- Best Ending: Congratulations! You think like a modern day Karen. And should get punched in the face.
-
- (Mid) Ending 2: You make a great Karen, but there are other choices a real Karen would approve of.
-
- (Lowest) Ending 3: Karen gets arrested for fleeing the scene of the accident at the school and causing public disturbance.
- You think like a Karen, but a real Karen wouldn't have ended up in jail.
