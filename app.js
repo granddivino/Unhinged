@@ -58,7 +58,7 @@ function displayChoices() {
                         //clicking the left button during scenario 1 loads scenario 2, with options C and D
                         choiceElement.textContent = "Screw book club, Karen wants to go home and drink box wine by herself.";  //Option C
                         choiceElement2.textContent = "Go to the supermarket.";  //Option D
-                        choiceElement.style.backgroundImage = "url(https://lh3.googleusercontent.com/proxy/pWD_PdB5jWOn95_X7cdZxx_nImx-ya-4ToKiFGrJwffvaNlb92q2ACHkkYDPhoQYvxj3W19z91qwH3kBo_80lHfQVTVmD-V0QPeXgHtwpOl2_HhonSNYShnHXLSLPtDAIqfjK9mb5exKsSQWFCUlDnAGRA)"
+                        choiceElement.style.backgroundImage = "url(https://i.pinimg.com/originals/9f/de/65/9fde659c9da77b79fde0ddd6466631b8.gif)"
                         choiceElement2.style.backgroundImage ="url(https://imagez.tmz.com/image/cb/1by1/2020/06/28/cb9a8f5d80244c108ca24688fa879af0_xl.jpg)"
                         scenario = 2; //adjust to new scenario
                         bitchPoints += 4;
@@ -268,12 +268,12 @@ if(this == choiceElement2){
                         bitchPoints += 2;
                         break;
                         }
-                        win();
                     }
                 }
 
 //"Win" Scenario
 const win = () => {
+    for (bitchPoints = 0; bitchPoints <= 30; bitchPoints++) {
     if (bitchPoints <= 10 && scenario > 7) {
         question.style.textContent = "Karen gets arrested for fleeing the scene of the accident at the school and causing public disturbance." +
         "You think like a Karen, but a real Karen wouldn't have ended up in jail."
@@ -286,7 +286,10 @@ const win = () => {
     else if (bitchPoints > 20 && bitchPoints <= 20 && scenario > 7) {
         question.style.textContent = "Congratulations! You think like a modern day Karen... And should get punched in the face."
         choices.style.backgroundImage = "url(https://fox5sandiego.com/wp-content/uploads/sites/15/2020/09/karen-halloween-mask.jpg?w=1280)"
-    }}
+        }
+
+    }
+}
 
 
 startGame()
