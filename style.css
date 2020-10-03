@@ -31,7 +31,7 @@ h1 {
 #choice1 {
     font-family: 'Special Elite', cursive;
     font-size: 30px;
-    color:red;
+    color: rgb(21, 161, 28);
     width: 200px;
     height: 400px;
     background: white;
@@ -46,7 +46,7 @@ h1 {
 #choice2 {
     font-family: 'Special Elite', cursive;
     font-size: 30px;
-    color: red;
+    color: rgb(21, 161, 28);
     width: 200px;
     height: 400px;
     background: white;

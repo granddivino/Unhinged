@@ -178,7 +178,7 @@ if(this == choiceElement2){
             case 3:     choiceElement.style.backgroundImage = null
                         choiceElement2.style.backgroundImage = null
                         question.textContent = "After dropping Meg off at home, it is now 5:40pm and Karen is late for book club at Kim's. She walks in " +
-                        "and finds the girls have started wine 'o clock without her. The girls couldn't wait, they're already busy complaining about their husbands instead of talking about books. So Karen" +
+                        "and finds the girls have started wine 'o clock without her. The girls couldn't wait, they're already busy complaining about their husbands instead of talking about books. So Karen " +
                         "decides to...";
                         //clicking right during scenario 3 loads options M and N
                         choiceElement.textContent = "Interrupt Susan's story and talk about how that bitch Kathy crashed into her.";  //Option M
