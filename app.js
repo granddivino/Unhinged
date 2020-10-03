@@ -142,29 +142,9 @@ function displayChoices() {
                         scenario = 14;
                         bitchPoints += 4;
                         break;
-        }
-        win();
-
-        //"Win" Scenario
-        // if (bitchPoints <= 10 && scenario > 7) {
-        //     choiceElement.style.backgroundImage = null
-        //     choiceElement2.style.backgroundImage = null
-        //     question.style.textContent = "Karen gets arrested for fleeing the scene of the accident at the school and causing public disturbance." +
-        //     "You think like a Karen, but a real Karen wouldn't have ended up in jail."
-        //     choices.style.backgroundImage = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQJXuQ7Pe2ol3sjdr8GSw-aXTp3MEn7VA-F4A&usqp=CAU)"
-        // }
-        // else if (bitchPoints > 10 && bitchPoints <= 20 && scenario > 7) {
-        //     choiceElement.style.backgroundImage = null
-        //     choiceElement2.style.backgroundImage = null
-        //     question.style.textContent = "You make a great Karen, but there are other choices a real Karen would approve of."
-        //     choices.style.backgroundImage = "url(https://nypost.com/wp-content/uploads/sites/2/2020/05/karen-hall-of-fame-01.jpg?quality=80&strip=all)"
-        // }
-        // else if (bitchPoints > 20 && bitchPoints <= 20 && scenario > 7) {
-        //     choiceElement.style.backgroundImage = null
-        //     choiceElement2.style.backgroundImage = null
-        //     question.style.textContent = "Congratulations! You think like a modern day Karen... And should get punched in the face."
-        //     choices.style.backgroundImage = "url(https://fox5sandiego.com/wp-content/uploads/sites/15/2020/09/karen-halloween-mask.jpg?w=1280)"
-        }
+                    }
+                     win();
+            }
     }
 
 //All the right side choices
@@ -268,6 +248,7 @@ if(this == choiceElement2){
                         bitchPoints += 2;
                         break;
                         }
+                    win();
                     }
                 }
 
