@@ -1,50 +1,69 @@
+.mainheading {
+    height: 200px;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:url("https://cdn.theatlantic.com/assets/media/img/mt/2020/08/KarenNew/original.jpg")
+}
+
 h1 {
+    font-family: 'Cookie', cursive;
+    font-size: 100px;
     text-align: center;
+    color: rgb(255, 251, 22);
 }
 
 .container {
+    font-family: 'Special Elite', cursive;
     text-align: center;
-    border: 4px solid black;
-    font-size: 25px;
-    background:purple;
+    font-size: 30px;
+    background: white;
     justify-content: center;
+    padding: 10px
 }
 
 .choices {
-    display: flex; 
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #choice1 {
-    align-content: center;
+    font-family: 'Special Elite', cursive;
+    font-size: 25px;
     width: 200px;
     height: 400px;
     background: white;
-    border: 4px solid black;
     flex: 1;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 #choice2 {
-    align-content: center;
+    font-family: 'Special Elite', cursive;
+    font-size: 25px;
     width: 200px;
     height: 400px;
     background: white;
-    border: 4px solid black;
     flex: 1;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
-/* .button1 {
 
-} */
+.container:hover {
+    color: black;
+    background: rgb(111, 211, 214);
+    cursor: pointer;
+}
 
-#choice1:hover {
-    color: white;
-    background: red;
+/* #choice1:hover {
+    color: black;
+    background: pink;
 }
 #choice2:hover {
-    color: white;
-    background: red;
-}
-
-#button {
-    align-items: flex-end;
-}
+    color: black;
+    background: pink;
+} */

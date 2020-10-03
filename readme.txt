@@ -43,8 +43,8 @@ Karen Characteristics:
  Kathy then gets out of her car.
   
  Question: What should Karen do?
- Choice A: Get out of the car and threaten to sue Kathy.
- Choice B: Hand Kathy a $20 and tell her that should be enough to cover that "ding"
+ Choice A: Get out of the car and threaten to sue Kathy. +4 points
+ Choice B: Hand Kathy a $20 and tell her that should be enough to cover that "ding" +2 points
 
  Scenario 2:
  (Result of choice A)
@@ -55,8 +55,8 @@ Karen Characteristics:
  a card with a phone number on it at Kathy. Karen then gets Meg and leaves the scene of the accident.
 
  Question: Where is Karen going now?
- Choice C: Screw the book club, Karen wants to go home and drink box wine by herself.
- Choice D: Go to the supermarket.
+ Choice C: Screw the book club, Karen wants to go home and drink box wine by herself. +3 points
+ Choice D: Go to the supermarket. +1 points
 
  Scenario 3:
  (Result of choice B)
@@ -64,8 +64,8 @@ Karen Characteristics:
  into her car and takes off. On the way home, Meg says she wants to stop and get ice cream.
 
  Question: Karen is already late for her book club. What should she do?
- Choice E: Get your daughter ice cream so she stops whining.
- Choice F: Go to book club!
+ Choice E: Get your daughter ice cream so she stops whining. +1 point
+ Choice F: Go to book club! +3 points
 
  Scenario 4:
  (Result of choice C)
@@ -73,8 +73,8 @@ Karen Characteristics:
  earlier in the day. Karen sees some children playing in the street in the cul-de-sac.
 
  Question: Those kids look like little troublemakers, what does Karen do?
- Choice G: Go out there and give the kids a piece of your mind.
- Choice H: Call the cops on the children.
+ Choice G: Go out there and give the kids a piece of your mind. +2 points
+ Choice H: Call the cops on the children. +5 points
 
  Scenario 5:
  (Result of choice D)
@@ -82,8 +82,8 @@ Karen Characteristics:
  Karen realizes that the exact brand of butter she uses is not in stock. Obviously, life is hard.
 
  Question: What does Karen do?
- Choice I: Karen asks to speak to the manager.
- Choice J: Karen finds the nearest store employee and takes action!
+ Choice I: Karen asks to speak to the manager. +10 points
+ Choice J: Karen finds the nearest store employee and takes action! +4 points
 
  Scenario 6:
  (Result of Choice E)
@@ -92,8 +92,8 @@ Karen Characteristics:
  had SUCH a rough day...
 
  Question: Karen decides to...
- Choice K: Complain and try to get free ice cream.
- Choice L: Ask to speak to the manager about how inept they are at keeping one flavor in stock.
+ Choice K: Complain and try to get free ice cream. +3 points
+ Choice L: Ask to speak to the manager about how inept they are at keeping one flavor in stock. +5 points
 
  Scenario 7:
  (Result of Choice F)
@@ -102,8 +102,11 @@ Karen Characteristics:
 
  Question: The girls couldn't wait, they're already busy complaining about their husbands instead of talking about books. So Karen
  decides to...
- Choice M: Interrupt Susan's story and talk about how that bitch Kathy crashed into her.
- Choice N: Raise hell about how they got started without her.
+ Choice M: Interrupt Susan's story and talk about how that bitch Kathy crashed into her. +4 points
+ Choice N: Raise hell about how they got started without her. +2 points
+
+ Max points = 12
+ Minimum points = 6
 
  Scenario 8:
  (Result of Choice G)
