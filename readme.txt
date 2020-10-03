@@ -168,11 +168,11 @@ Karen Characteristics:
  especially to workers in the retail or food industry. You threaten to sue or call the cops at every chance you get, 
  especially at the most minor of inconvenciences.
  
- Congratulations! You think like a modern day Karen. And should get punched in the face.
+ Best Ending: Congratulations! You think like a modern day Karen. And should get punched in the face.
 
- Ending 2: You make a great Karen, but there are other choices a real Karen would approve of.
+ (Mid) Ending 2: You make a great Karen, but there are other choices a real Karen would approve of.
 
- Ending 3: Karen gets arrested for fleeing the scene of the accident at the school and causing public disturbance.
+ (Lowest) Ending 3: Karen gets arrested for fleeing the scene of the accident at the school and causing public disturbance.
  You think like a Karen, but a real Karen wouldn't have ended up in jail.
 
  Citation:

@@ -30,10 +30,13 @@ h1 {
 
 #choice1 {
     font-family: 'Special Elite', cursive;
-    font-size: 25px;
+    font-size: 40px;
+    color:red;
     width: 200px;
     height: 400px;
     background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
     flex: 1;
     display: flex;
     align-items: center;
@@ -42,15 +45,24 @@ h1 {
 }
 #choice2 {
     font-family: 'Special Elite', cursive;
-    font-size: 25px;
+    font-size: 40px;
+    color: red;
     width: 200px;
     height: 400px;
     background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+.choices {
+    background: white;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container:hover {
