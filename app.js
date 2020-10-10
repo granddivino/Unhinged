@@ -1,7 +1,8 @@
 const question = document.getElementById('question');
 const choiceElement = document.getElementById('choice1');
 const choiceElement2 = document.getElementById('choice2');
-const choices = document.getElementsByTagName('div')
+const choices = document.getElementById('choices');
+
 
 var scenario = 0;  //Scenario tracker
 
@@ -22,8 +23,12 @@ function startGame() {
     choiceElement.textContent = "Objective: There's not really one, just be the best Karen you can be and see where it takes you!" +
     "Don't think too much about it being realistic like I did (in the real world, most of the choices presented won't fly)" +
     "Be the best Karen you can be by earning points. Points will result in different endings.";
+    choiceElement2.textContent = "";
     choiceElement.style.backgroundImage = null
-    choiceElement2.style.backgroundImage = null
+    choiceElement2.style.backgroundImage = "url(https://m.betootaadvocate.com/wp-content/uploads/2020/06/karen-karen.jpg)"
+    //To take out being able to click on choices before game actually begins
+    choiceElement.removeEventListener('click', displayChoices);
+    choiceElement2.removeEventListener('click', displayChoices2);
     bitchPoints = 0;
     scenario = 0;
 }
@@ -35,9 +40,12 @@ function displayQuestion(){
                                             "Karen puts a little bit too much gas on her pedal as she thinks she\'s about to speed off... and rams into Kathy's car. " +
                                             "Kathy then gets out of her car.\n\nWhat should Karen do?";
                     choiceElement.textContent = "Get out of the car and threaten to sue Kathy."; //change button text based on current scenario
-                    choiceElement2.textContent = "Hand Kathy a $20 and tell her that should be enough to cover that \"ding\.";
+                    choiceElement2.textContent = "Hand Kathy a $20 and tell her that should be enough to cover that" + " ding.";
                     choiceElement.style.backgroundImage = "url(https://img.particlenews.com/img/id/4YLSrH_0PYomLdf00?type=thumbnail_512x288)"
                     choiceElement2.style.backgroundImage = "url(https://static-16.sinclairstoryline.com/resources/media/a86378c6-3879-40a9-bdc9-b463ab0b1787-large16x9_GettyImages451333971.jpg?1541529429320)"
+                    //Re-added click event listener other wise game can't be played
+                    choiceElement.addEventListener('click', displayChoices);
+                    choiceElement2.addEventListener('click', displayChoices2);
                     scenario = 1;
                     break;
     }
@@ -90,67 +98,71 @@ function displayChoices() {
                         break;
             case 4:     choiceElement.style.backgroundImage = null
                         choiceElement2.style.backgroundImage = null
+                        choiceElement2.removeEventListener('click', displayChoices2);
                         question.textContent = "Karen goes out and yells at the children for playing too close to her driveway, and threatens to call the cops on them anyway. " +
                         "One of the neighboring parents decides to intervene and decides she's had enough of Karen and punches her in the face.";
-                        choiceElement.textContent = "";
+                        choiceElement.textContent = "Click to see what kind of Karen you are!";
                         choiceElement2.textContent = "";
-                        choices.style.backgroundImage = "url(https://static.ffx.io/images/$zoom_0.157%2C$multiply_0.4431%2C$ratio_1.5%2C$width_756%2C$x_129%2C$y_67/t_crop_custom/q_86%2Cf_auto/bfbaeae2cb505070236b00578e00794e06f7afbc)"
+                        choiceElement2.style.backgroundImage = "url(https://static.ffx.io/images/$zoom_0.157%2C$multiply_0.4431%2C$ratio_1.5%2C$width_756%2C$x_129%2C$y_67/t_crop_custom/q_86%2Cf_auto/bfbaeae2cb505070236b00578e00794e06f7afbc)"
                         scenario = 8;
                         bitchPoints += 2;
-                        document.getElementsById("choice1").disabled = true;
-                        document.getElementsById("choice2").disabled = true;
                         break;
             case 5:     choiceElement.style.backgroundImage = null
                         choiceElement2.style.backgroundImage = null
+                        choiceElement2.removeEventListener('click', displayChoices2);
                         question.textContent = "Karen asks to speak to the manager about not having the exact brand of butter she wants, even though there's dozens " +
                         "of other kinds to choose from. The manager calmly asks her if there's any other brand that would work for her or if there'so " +
                         "anything that can be done to satisfy her, but no, when Karen doesn't get her way, there's no end in sight. Karen yells " +
                         "at the manager exclaiming that she's been a customer there for years, and that this is just the result of pure laziness. " +
                         "A random woman steps in and punches Karen in the face.";
-                        choiceElement.textContent = "";
+                        choiceElement.textContent = "Click to see what kind of Karen you are!";
                         choiceElement2.textContent = "";
-                        document.getElementsById("choice1").disabled = true;
-                        document.getElementsById("choice2").disabled = true;
-                        choices.style.backgroundImage = "url(https://www.errenskitchen.com/wp-content/uploads/2018/04/butter.jpg)"
+                        choiceElement2.style.backgroundImage = "url(https://www.errenskitchen.com/wp-content/uploads/2018/04/butter.jpg)"
                         scenario = 10;
                         bitchPoints += 10;
                         break;
             case 6:     choiceElement.style.backgroundImage = null
                         choiceElement2.style.backgroundImage = null
+                        choiceElement2.removeEventListener('click', displayChoices2);
                         question.textContent = "Karen cuts to the front of the line, and while paying for Meg's ice cream, shegoes on to say that it's not that hard to " +
                         "serve ice cream, and asks why she has to do everything, and how she has places to be, and that she might as well be " +
                         "behind that counter, and that she should get the ice cream for free. A young girl comes from the middle of the line " +
                         "and slams Karen's face into the counter and knocks her out.";
-                        choiceElement.textContent = "";
+                        choiceElement.textContent = "Click to see what kind of Karen you are!";
                         choiceElement2.textContent = "";
-                        document.getElementsById("choice1").disabled = true;
-                        document.getElementsById("choice2").disabled = true;
-                        choices.style.backgroundImage = "url(https://nypost.com/wp-content/uploads/sites/2/2019/10/woman-attacks-line-cutter-wp-thumb.jpg?quality=80&strip=all)"
+                        choiceElement2.style.backgroundImage = "url(https://nypost.com/wp-content/uploads/sites/2/2019/10/woman-attacks-line-cutter-wp-thumb.jpg?quality=80&strip=all)"
                         scenario = 12; 
                         bitchPoints += 3;
                         break;
             case 7:     choiceElement.style.backgroundImage = null
                         choiceElement2.style.backgroundImage = null
+                        choiceElement2.removeEventListener('click', displayChoices2);
                         question.textContent = "Karen interrupts Susan after barging in and being 40 minutes late and starts talking about how Daniel is useless, and that " +
                         "Kathy crashed into her, and that she almost died. Karen goes on about how hard her life is and how she has to do everything. " +
                         "Susan then punches Karen for interrupting her (and she's wanted to do that for a long time).";
-                        choiceElement.textContent = "";
+                        choiceElement.textContent = "Click to see what kind of Karen you are!";
                         choiceElement2.textContent = "";
-                        document.getElementsById("choice1").disabled = true;
-                        document.getElementsById("choice2").disabled = true;
-                        choices.style.backgroundImage = "url(https://www.bravotv.com/sites/bravo/files/styles/amp_metadata_content_image_min_696px_wide/public/legacy/images/promote/2014/04/dish-040314-tbt-an-epic-fight.jpg?itok=oSJUm-pi)"
+                        choiceElement2.style.backgroundImage = "url(https://www.bravotv.com/sites/bravo/files/styles/amp_metadata_content_image_min_696px_wide/public/legacy/images/promote/2014/04/dish-040314-tbt-an-epic-fight.jpg?itok=oSJUm-pi)"
                         scenario = 14;
                         bitchPoints += 4;
                         break;
+            default:    choiceElement.textContent = "";
+                        choiceElement2.textContent = "";
+                        choiceElement.removeEventListener('click', displayChoices);
+                        choiceElement2.removeEventListener('click', displayChoices2);
+                        win();
                     }
-                     win();
+                    
             }
     }
 
 //All the right side choices
-function displayChoices2()  {
-if(this == choiceElement2){
-        switch(scenario){
+function displayChoices2()  
+{
+    if(this == choiceElement2)
+    {
+        switch(scenario)
+        {
             case 1:     choiceElement.style.backgroundImage = null
                         choiceElement2.style.backgroundImage = null
                         question.textContent = "Without saying sorry, or having remorse of any kind (or exchanging insurance info), Karen shoves Meg " +
@@ -190,20 +202,20 @@ if(this == choiceElement2){
                         break;
             case 4:     choiceElement.style.backgroundImage = null
                         choiceElement2.style.backgroundImage = null
+                        choiceElement.removeEventListener('click', displayChoices);
                         question.textContent = "Karen calls the cops and tells them the kids outside look like they're too poor to be residents of the neighborhood. " +
                         "She fears for her safety, and believes that those kids are dealing drugs and planning a break in to her home. She also " +
                         "believes that all the children are probably vaccinated and that's why they turned out to be bad seeds. The doorbell rings. " +
                         "Karen opens the door and gets a punch to the face by Kathy, who had unfinished business.";
                         choiceElement.textContent = "";
-                        choiceElement2.textContent = "";
-                        document.getElementsById("choice1").disabled = true;
-                        document.getElementsById("choice2").disabled = true;
-                        choices.style.backgroundImage = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSlP0FuEIuJmUtRJ33RU3Pj3m2VEC4O0CpclQ&usqp=CAU)"
+                        choiceElement2.textContent = "Click to see what kind of Karen you are!";
+                        choiceElement.style.backgroundImage = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSlP0FuEIuJmUtRJ33RU3Pj3m2VEC4O0CpclQ&usqp=CAU)"
                         scenario = 9;
-                        bitchPoints += 5;
+                        bitchPoints += 5;    
                         break;
             case 5:     choiceElement.style.backgroundImage = null
                         choiceElement2.style.backgroundImage = null
+                        choiceElement.removeEventListener('click', displayChoices);
                         question.textContent = "Karen spots one of the nearest courtesy clerks and immediately begins to yell at her without a face mask on. " +
                         "She says that she needs this butter to serve a proper dinner and that no other kind will do. She asks the girl \"what kind " +
                         "of essential worker are you?\" It has to be the easiest job in the world to keep butter on the shelf, but obviously no one " +
@@ -211,66 +223,65 @@ if(this == choiceElement2){
                         "the tirade, one of the clerk's coworkers comes up and angrily shoves Karen from behind into the canned vegetables " +
                         "causing all the shelves to fall on top of Karen.";
                         choiceElement.textContent = "";
-                        choiceElement2.textContent = "";
-                        document.getElementsById("choice1").disabled = true;
-                        document.getElementsById("choice2").disabled = true;
-                        choices.style.backgroundImage = "url(https://miro.medium.com/max/720/1*qdyANfSIrcYqD-jh4MILlA.jpeg)"
+                        choiceElement2.textContent = "Click to see what kind of Karen you are!";
+                        choiceElement.style.backgroundImage = "url(https://miro.medium.com/max/720/1*qdyANfSIrcYqD-jh4MILlA.jpeg)"
                         scenario = 11;
-                        bitchPoints += 4;
+                        bitchPoints += 4;    
                         break;
             case 6:     choiceElement.style.backgroundImage = null
                         choiceElement2.style.backgroundImage = null
+                        choiceElement.removeEventListener('click', displayChoices);
                         question.textContent = "Karen asks to speak to the manager and goes on about how hard it could possibly be to keep strawberry daquiri in stock, " +
                         "it's just one among many. The manager explains that that flavor is in high demand and that they will get a new stock " +
                         "again tomorrow. Karen goes on about how she's gonna leave this Coldstone a horrible review on Yelp and urges everyone else that's " +
                         "in line to do the same. Karen turns around and gets a swift punch to the face from the woman behind her. ";
                         choiceElement.textContent = "";
-                        choiceElement2.textContent = "";
-                        document.getElementsById("choice1").disabled = true;
-                        document.getElementsById("choice2").disabled = true;
-                        choices.style.backgroundImage = "url(https://nextshark.com/wp-content/uploads/2018/08/crap-1280x720.jpg)"
+                        choiceElement2.textContent = "Click to see what kind of Karen you are!";
+                        choiceElement.style.backgroundImage = "url(https://nextshark.com/wp-content/uploads/2018/08/crap-1280x720.jpg)"
                         scenario = 13;
                         bitchPoints += 5;
-
                         break;
             case 7:     choiceElement.style.backgroundImage = null
                         choiceElement2.style.backgroundImage = null
+                        choiceElement.removeEventListener('click', displayChoices);
                         question.textContent = "Karen barges into Kim's house ready to ask why they started without her. But wait, there aren't any essential oils in sight. " +
                         "Instead, she insists that there should be oils present the use will prevent the spread of covid-19, even though in the " +
                         "past she has clearly stated that she believes that it's a hoax. Everyone stops and stares at her for a moment. Kim then " +
                         "gets up and punches Karen in the face.";
                         choiceElement.textContent = "";
-                        choiceElement2.textContent = "";
-                        document.getElementsById("choice1").disabled = true;
-                        document.getElementsById("choice2").disabled = true;
-                        choices.style.backgroundImage = "url(https://lh3.googleusercontent.com/proxy/by8SiHKPRyDQQqiaQkkvnP_Gvp4QjmUnkdbsfFHW9OoVe3asjXF7aAVsupDN5W6shSHutLZWGy142m5NhCrNZNUBXX2eBSaXR9KZe4qBgRDVXLKl_wqds-bv-lm_aF2D0Yjm)"
+                        choiceElement2.textContent = "Click to see what kind of Karen you are!";                        
+                        choiceElement.style.backgroundImage = "url(https://nextshark.com/wp-content/uploads/2018/08/crap-1280x720.jpg)"
                         scenario = 15;
-                        bitchPoints += 2;
+                        bitchPoints += 2;    
                         break;
-                        }
-                    win();
-                    }
-                }
+            default:    choiceElement.textContent = "";
+                        choiceElement2.textContent = "";
+                        choiceElement.removeEventListener('click', displayChoices);
+                        choiceElement2.removeEventListener('click', displayChoices2);
+                        win();
+        }
+    }
+}
 
 //"Win" Scenario
-function win () {
-    for (bitchPoints = 0; bitchPoints <= 30; bitchPoints++) {
-    if (bitchPoints <= 10 && scenario > 7) {
-        question.style.textContent = "Karen gets arrested for fleeing the scene of the accident at the school and causing public disturbance." +
-        "You think like a Karen, but a real Karen wouldn't have ended up in jail."
-        choices.style.backgroundImage = "url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQJXuQ7Pe2ol3sjdr8GSw-aXTp3MEn7VA-F4A&usqp=CAU)"
+function win() {
+    const choicebox = document.getElementById('choicebox');
+    if (bitchPoints <= 6 && scenario > 7) {
+        question.textContent = "Karen gets arrested for fleeing the scene of the accident at the school and causing public disturbance." +
+        " You think like a Karen, but a real Karen wouldn't have ended up in jail. (Karen Level: Weak)"
+        choiceElement.style.backgroundImage = "url(https://i.ytimg.com/vi/zLAiIyf134o/maxresdefault.jpg)"
     }
-    else if (bitchPoints > 10 && bitchPoints <= 20 && scenario > 7) {
-        question.style.textContent = "You make a great Karen, but there are other choices a real Karen would approve of."
-        choices.style.backgroundImage = "url(https://nypost.com/wp-content/uploads/sites/2/2020/05/karen-hall-of-fame-01.jpg?quality=80&strip=all)"
+    else if (bitchPoints > 7 && bitchPoints <= 15 && scenario > 7) {
+        question.textContent = "You make a great Karen, but there are other choices a real Karen would approve of. (Karen Level: Medium)"
+        choiceElement.style.backgroundImage = "url(https://nypost.com/wp-content/uploads/sites/2/2020/05/karen-hall-of-fame-01.jpg?quality=80&strip=all)"
     }
-    else if (bitchPoints > 20 && bitchPoints <= 20 && scenario > 7) {
-        question.style.textContent = "Congratulations! You think like a modern day Karen... And should get punched in the face."
-        choices.style.backgroundImage = "url(https://fox5sandiego.com/wp-content/uploads/sites/15/2020/09/karen-halloween-mask.jpg?w=1280)"
+    else if (bitchPoints > 15 && bitchPoints <= 22 && scenario > 7) {
+        question.textContent = "Congratulations! You think like a modern day Karen... And should get punched in the face. (Karen Level: High)"
+        choiceElement.style.backgroundImage = "url(https://fox5sandiego.com/wp-content/uploads/sites/15/2020/09/karen-halloween-mask.jpg?w=1280)"
         }
 
     }
-}
+
 
 
 startGame()

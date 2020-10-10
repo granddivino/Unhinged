@@ -22,7 +22,7 @@ h1 {
     padding: 10px
 }
 
-.choices {
+#choices {
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,8 +30,8 @@ h1 {
 
 #choice1 {
     font-family: 'Special Elite', cursive;
-    font-size: 30px;
-    color: rgb(21, 161, 28);
+    font-size: 36px;
+    color: rgb(10, 161, 18);
     width: 200px;
     height: 400px;
     background: white;
@@ -45,7 +45,7 @@ h1 {
 }
 #choice2 {
     font-family: 'Special Elite', cursive;
-    font-size: 30px;
+    font-size: 36px;
     color: rgb(21, 161, 28);
     width: 200px;
     height: 400px;
@@ -70,12 +70,3 @@ h1 {
     background: pink;
     cursor: pointer;
 }
-
-/* #choice1:hover {
-    color: black;
-    background: pink;
-}
-#choice2:hover {
-    color: black;
-    background: pink;
-} */
