@@ -265,10 +265,9 @@ function displayChoices2()
 
 //"Win" Scenario
 function win() {
-    const choicebox = document.getElementById('choicebox');
     if (bitchPoints <= 6 && scenario > 7) {
         question.textContent = "Karen gets arrested for fleeing the scene of the accident at the school and causing public disturbance." +
-        " You think like a Karen, but a real Karen wouldn't have ended up in jail. (Karen Level: Weak)"
+        " You think like a Karen, but a real Karen wouldn't have ended up in jail while being insufferable. (Karen Level: Weak)"
         choiceElement.style.backgroundImage = "url(https://i.ytimg.com/vi/zLAiIyf134o/maxresdefault.jpg)"
     }
     else if (bitchPoints > 7 && bitchPoints <= 15 && scenario > 7) {
