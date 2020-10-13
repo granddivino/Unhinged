@@ -250,7 +250,7 @@ function displayChoices2()
                         "gets up and punches Karen in the face.";
                         choiceElement.textContent = "";
                         choiceElement2.textContent = "Click to see what kind of Karen you are!";                        
-                        choiceElement.style.backgroundImage = "url(https://nextshark.com/wp-content/uploads/2018/08/crap-1280x720.jpg)"
+                        choiceElement.style.backgroundImage = "url(https://pbs.twimg.com/media/DlDRVXeXoAMsXAR.jpg)"
                         scenario = 15;
                         bitchPoints += 2;    
                         break;
