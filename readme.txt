@@ -1,6 +1,6 @@
 App Title: Uninged: A Day in the Life of a Karen
 
-App Demo: https://granddivino.github.io/project1/
+App Demo: https://granddivino.github.io/Unhinged/
 
 Concept:
 It's a short game with many paths. The concept is to be a text based game with a bit of inspiration drawn from
@@ -86,4 +86,4 @@ own and getting it to work. But after a lot of frustration, googling, and workin
 feel more accomplished in my understanding. 95% of my time spent on this was devoted to the coding and the rest 
 to CSS.
 
-App Demo: https://granddivino.github.io/project1/
+App Demo: https://granddivino.github.io/Unhinged/
